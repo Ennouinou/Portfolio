@@ -1,0 +1,7 @@
+<div *ngFor="let link of links" class="d-flex">
+  <div> <i class="fa fa-{{link.icon}}"></i></div>
+  <div style="margin-left: 10px; margin-bottom: 10px;">
+    <span  class="d-block">{{link.value}}</span>
+    <span class="d-block" style="color: red">{{link.title}}</span>
+  </div>
+</div>

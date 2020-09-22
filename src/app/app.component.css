@@ -1,0 +1,21 @@
+.left-side{
+  width: 30%;
+  padding: 20px;
+  background-color: lightgray;
+}
+.main-side{
+  width: 70%;
+  padding: 20px;
+  background-color: gray;
+}
+
+.element{
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px 2px black;
+  padding: 10px;
+  margin-top: 10px;
+}
+.details{
+  padding: 10px;
+}
