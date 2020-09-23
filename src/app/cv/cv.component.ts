@@ -14,17 +14,17 @@ export class CvComponent implements OnInit {
     },
     {
       date : '2018-2019',
-      title : 'Licence Science et Technique –GENIE INFORMATIQUE ',
+      title : 'Licence en Sciences et Techniques – GENIE INFORMATIQUE ',
       details : 'FST : Faculté des sciences technique - Fès - mention Bien',
     },
     {
       date : '2015-2018',
-      title : 'DEUST spécialité MIP',
+      title : 'DEUST - MIP',
       details : 'FST : Faculté des sciences technique - Fès - mention A.Bien',
     },
     {
       date : '2014-2015',
-      title : 'Baccalauréat science physiques',
+      title : 'Baccalauréat - science physiques',
       details : 'Lycée - Kenitra - mention bien',
     },
   ];
@@ -69,7 +69,7 @@ export class CvComponent implements OnInit {
       details : '',
     },
     {
-      date : 'Ingénieurie Web',
+      date : 'Ingénierie Web',
       title : 'HTML, CSS, JavaScript, JQuery, Ajax, PHP, Lumen, Three.js, Angular',
       details : '',
     },
@@ -89,7 +89,7 @@ export class CvComponent implements OnInit {
       details : '',
     },
     {
-      date : 'Modélisation et GL',
+      date : 'Modélisation et Génie Logiciel',
       title : 'UML2, Design Patterns, Scrum, XP',
       details : '',
     },
