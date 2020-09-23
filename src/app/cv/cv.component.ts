@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {element} from 'protractor';
 
 @Component({
   selector: 'app-cv',
@@ -113,30 +112,31 @@ export class CvComponent implements OnInit {
     const leftSide = document.getElementsByClassName('left-side')[0] as HTMLElement;
     leftSide.style['background-color'] = 'rgb(51, 83, 132)';
     const elements = document.getElementsByClassName('element') as HTMLCollectionOf<HTMLElement>;
-    for(const i in elements){
+    console.log(elements);
+    for (let i = 0 ; i < elements.length ; i++){
       elements[i].style['background-color'] = 'white';
-    }
+     }
     const mainSide = document.getElementsByClassName('main-side')[0] as HTMLElement;
     mainSide.style['background-color'] = 'white';
     document.getElementsByClassName('big-title')[0].classList.add('white');
     const links = document.getElementsByClassName('link-value') ;
-    for (const link of links){
-      link.classList.add('white');
+    for (let i = 0 ; i < links.length ; i++){
+        links[i].classList.add('white');
     }
   }
   grayTheme(): void{
     const leftSide = document.getElementsByClassName('left-side')[0] as HTMLElement;
     leftSide.style['background-color'] = 'rgb(240,240,240)';
     const elements = document.getElementsByClassName('element') as HTMLCollectionOf<HTMLElement>;
-    for (const i in elements){
+    for (let i = 0 ; i < elements.length ; i++){
       elements[i].style['background-color'] = 'rgb(240,240,240)';
     }
     const mainSidde = document.getElementsByClassName('main-side')[0]  as HTMLElement;
     mainSidde.style['background-color'] = 'whitesmoke';
     document.getElementsByClassName('big-title')[0].classList.remove('white');
     const links = document.getElementsByClassName('link-value');
-    for (const link of links){
-      link.classList.remove('white');
+    for (let i = 0 ; i < links.length ; i++){
+      links[i].classList.remove('white');
     }
   }
 
