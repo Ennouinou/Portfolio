@@ -116,6 +116,11 @@ export class CvComponent implements OnInit {
       element.style['background-color'] = 'white';
     }
     document.getElementsByClassName('main-side')[0].style['background-color'] = 'white';
+    document.getElementsByClassName('big-title')[0].classList.add('white');
+    const links = document.getElementsByClassName('link-value');
+    for (const link of links){
+      link.classList.add('white');
+    }
   }
   grayTheme(): void{
     document.getElementsByClassName('left-side')[0].style['background-color'] = 'rgb(240,240,240)';
@@ -124,6 +129,11 @@ export class CvComponent implements OnInit {
       element.style['background-color'] = 'rgb(240,240,240)';
     }
     document.getElementsByClassName('main-side')[0].style['background-color'] = 'whitesmoke';
+    document.getElementsByClassName('big-title')[0].classList.remove('white');
+    const links = document.getElementsByClassName('link-value');
+    for (const link of links){
+      link.classList.remove('white');
+    }
   }
 
 }

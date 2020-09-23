@@ -32,3 +32,6 @@ body{
   color: rgba(102, 153, 204,0.9);
   font-weight: bold;
 }
+.white {
+  color: white;
+}
