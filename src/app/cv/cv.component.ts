@@ -110,25 +110,29 @@ export class CvComponent implements OnInit {
   ngOnInit(): void {
   }
   blueTheme(): void{
-    document.getElementsByClassName('left-side')[0].style['background-color'] = 'rgb(51, 83, 132)';
-    const elements = document.getElementsByClassName('element');
-    for (const element of elements){
-      element.style['background-color'] = 'white';
+    const leftSide = document.getElementsByClassName('left-side')[0] as HTMLElement;
+    leftSide.style['background-color'] = 'rgb(51, 83, 132)';
+    const elements = document.getElementsByClassName('element') as HTMLCollectionOf<HTMLElement>;
+    for(const i in elements){
+      elements[i].style['background-color'] = 'white';
     }
-    document.getElementsByClassName('main-side')[0].style['background-color'] = 'white';
+    const mainSide = document.getElementsByClassName('main-side')[0] as HTMLElement;
+    mainSide.style['background-color'] = 'white';
     document.getElementsByClassName('big-title')[0].classList.add('white');
-    const links = document.getElementsByClassName('link-value');
+    const links = document.getElementsByClassName('link-value') ;
     for (const link of links){
       link.classList.add('white');
     }
   }
   grayTheme(): void{
-    document.getElementsByClassName('left-side')[0].style['background-color'] = 'rgb(240,240,240)';
-    const elements = document.getElementsByClassName('element');
-    for (const element of elements){
-      element.style['background-color'] = 'rgb(240,240,240)';
+    const leftSide = document.getElementsByClassName('left-side')[0] as HTMLElement;
+    leftSide.style['background-color'] = 'rgb(240,240,240)';
+    const elements = document.getElementsByClassName('element') as HTMLCollectionOf<HTMLElement>;
+    for (const i in elements){
+      elements[i].style['background-color'] = 'rgb(240,240,240)';
     }
-    document.getElementsByClassName('main-side')[0].style['background-color'] = 'whitesmoke';
+    const mainSidde = document.getElementsByClassName('main-side')[0]  as HTMLElement;
+    mainSidde.style['background-color'] = 'whitesmoke';
     document.getElementsByClassName('big-title')[0].classList.remove('white');
     const links = document.getElementsByClassName('link-value');
     for (const link of links){
