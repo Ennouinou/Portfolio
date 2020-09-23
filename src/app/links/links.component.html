@@ -1,7 +1,7 @@
 <div *ngFor="let link of links" class="d-flex">
-  <div> <i class="fa fa-{{link.icon}}"></i></div>
+  <div> <i class="fa fa-{{link.icon}} sub-title"></i></div>
   <div style="margin-left: 10px; margin-bottom: 10px;">
     <span  class="d-block">{{link.value}}</span>
-    <span class="d-block" style="color: red">{{link.title}}</span>
+    <span class="d-block sub-title">{{link.title}}</span>
   </div>
 </div>

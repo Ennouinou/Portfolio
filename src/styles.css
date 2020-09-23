@@ -15,3 +15,20 @@ body{
 .d-block{
   display: block;
 }
+.g-color{
+  color: rgba(102, 153, 204,0.8);
+}
+.big-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.title{
+  font-size: 20px;
+  color: rgba(102, 153, 204,1);
+  font-weight: bold;
+}
+.sub-title{
+  font-size: 15px;
+  color: rgba(102, 153, 204,0.9);
+  font-weight: bold;
+}

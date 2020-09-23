@@ -29,7 +29,7 @@ export class LinksComponent implements OnInit {
     },
     {
       title : 'Adresse',
-      value : 'Kénitra',
+      value : 'LOT 23 RUE ANOUAL KENITRA',
       icon : 'map-marker',
     },
   ];

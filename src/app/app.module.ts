@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { InfosPComponent } from './infos-p/infos-p.component';
 import { LinksComponent } from './links/links.component';
 import { ElementComponent } from './element/element.component';
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ElementComponent } from './element/element.component';
     InfosPComponent,
     LinksComponent,
     ElementComponent,
+    CvComponent,
   ],
   imports: [
     BrowserModule
