@@ -3,6 +3,8 @@
     <app-infos-p></app-infos-p>
   </div>
   <div class="main-side">
+    <button class="blue-theme" style="float: right" (click)="blueTheme()"></button>
+    <button class="gray-theme" style="float: right" (click)="grayTheme()"></button>
     <div class="element">
       <div class="title"> Formations : </div>
       <div class="details" *ngFor="let formation of formations">

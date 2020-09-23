@@ -19,3 +19,18 @@
 .details{
   padding: 10px;
 }
+.blue-theme{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(51, 83, 132);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.gray-theme{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(240,240,240);
+  border-radius: 100%;
+  cursor: pointer;
+
+}

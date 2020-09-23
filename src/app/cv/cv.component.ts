@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {element} from 'protractor';
 
 @Component({
   selector: 'app-cv',
@@ -107,6 +108,22 @@ export class CvComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  blueTheme(): void{
+    document.getElementsByClassName('left-side')[0].style['background-color'] = 'rgb(51, 83, 132)';
+    const elements = document.getElementsByClassName('element');
+    for (const element of elements){
+      element.style['background-color'] = 'white';
+    }
+    document.getElementsByClassName('main-side')[0].style['background-color'] = 'white';
+  }
+  grayTheme(): void{
+    document.getElementsByClassName('left-side')[0].style['background-color'] = 'rgb(240,240,240)';
+    const elements = document.getElementsByClassName('element');
+    for (const element of elements){
+      element.style['background-color'] = 'rgb(240,240,240)';
+    }
+    document.getElementsByClassName('main-side')[0].style['background-color'] = 'whitesmoke';
   }
 
 }
