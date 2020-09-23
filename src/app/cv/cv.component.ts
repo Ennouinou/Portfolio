@@ -64,7 +64,7 @@ export class CvComponent implements OnInit {
       details : '',
     },
     {
-      date : 'Framework Java EE',
+      date : 'Frameworks Java EE',
       title : 'Struts2, JSF, Spring, Hibernate',
       details : '',
     },
