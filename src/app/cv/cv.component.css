@@ -1,3 +1,6 @@
+.cv-container{
+  display: flex;
+}
 .left-side{
   width: 30%;
   padding: 20px;
@@ -32,5 +35,15 @@
   background-color: rgb(240,240,240);
   border-radius: 100%;
   cursor: pointer;
-
+}
+@media screen and (max-width: 700px){
+  .cv-container{
+    display: block;
+  }
+  .left-side{
+    width: 100%;
+  }
+  .main-side{
+    width: 100%;
+  }
 }
